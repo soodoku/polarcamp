@@ -14,6 +14,9 @@ perceptions. The extension plan develops this distinction, updates the
 literature, and treats proposed panel regressions as descriptive associations.
 The estimates are unchanged from 0.1.1.
 
+The bundled renv bootstrap now creates the project library before copying a
+cached renv installation, so fresh checkouts activate the locked environment.
+
 This release has a narrower scope than the historical manuscript. The original
 observational advertising analysis awaits source airing records and the
 geographic crosswalk. The partisan-strength appendix has not been reconstructed
