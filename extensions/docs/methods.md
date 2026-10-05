@@ -1,7 +1,7 @@
 # Additional analyses
 
 These analyses are built separately with `make extensions` and are not in the
-Part 1 manuscript.
+manuscript.
 
 ## ANES panel construction
 
@@ -45,9 +45,10 @@ are not a test of ignorable attrition.
 
 ## Experiment exports
 
-The 2012 advertising study is described in `research-design.md`; its available
-exports support descriptive comparisons but do not pass the protocol gate
-for causal inclusion. `extensions/tabs/experiment_cells.csv` includes arm-specific
+The 2012 advertising study is described in [the research design](research-design.md).
+Its available exports support descriptive comparisons; causal interpretation
+requires the assignment and selection records described there.
+`extensions/tabs/experiment_cells.csv` includes arm-specific
 available counts, usable counts, missingness, means, and t intervals. Contrasts
 use an arm-saturated model, HC2 covariance, and normal intervals. The balanced
 negative-minus-positive contrast gives equal weight to arms 4 and 5 and

@@ -1,5 +1,26 @@
 # Releases
 
+## 1.0.0 — 2026-10-05
+
+Working-paper release of *Coming to Dislike Your Opponents: Candidate
+Evaluations during Presidential Campaigns*, with the reproducible NAES analysis
+and all six authorized source datasets. The manuscript retains the full-year
+candidate trajectories, common autumn comparisons, battleground trend
+comparisons, and candidate-field diagnostic.
+
+The interpretation of ideological distance now distinguishes perceived
+disagreement from factual accuracy and recognizes that affect may also change
+perceptions. The extension plan develops this distinction, updates the
+literature, and treats proposed panel regressions as descriptive associations.
+The estimates are unchanged from 0.1.1.
+
+This release has a narrower scope than the historical manuscript. The original
+observational advertising analysis awaits source airing records and the
+geographic crosswalk. The partisan-strength appendix has not been reconstructed
+and is omitted. The ANES candidate–party panel comparison and 2012 advertising
+experiment remain separate extensions, with their measurement and design
+limitations documented. The manuscript remains an unpublished working paper.
+
 ## 0.1.1 — 2026-10-04
 
 Includes the six source datasets used by the manuscript and existing extensions:

@@ -1,7 +1,7 @@
 Package: polarcamp
 Type: Project
 Title: Candidate Evaluations during Presidential Campaigns
-Version: 0.1.1
+Version: 1.0.0
 Authors@R: c(
     person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com"),
     person("Shanto", "Iyengar", role = "aut"))

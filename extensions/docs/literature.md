@@ -1,8 +1,8 @@
 # Candidate, party, and supporter evaluations: research context
 
-Review updated October 4, 2026. This is a focused review of the closest substantive,
-measurement, and identification precedents, not a systematic review. Publisher
-abstracts are distinguished from inspected full texts below.
+Review updated October 5, 2026. This is a focused review of the closest substantive,
+measurement, and identification precedents, not a systematic review. Some sources were available only as abstracts or selected publisher sections,
+as noted below.
 
 The manuscript should first establish what changes, for whom, and over which
 period. Explaining those changes is a separate task. A well-identified null can
@@ -78,8 +78,10 @@ thermometers cannot be retroactively relabeled as those constructs.
 randomizes hypothetical candidates' ideology and party labels and finds stronger
 responses to ideology. That gives policy-based evaluation a serious place among
 the explanations. It does not show that actual campaign-period change is caused
-by learning. Our ideological-placement items cannot distinguish accuracy,
-projection, changing issue weights, and greater confidence in false beliefs.
+by learning. Perceived ideological disagreement can accompany changing affect
+without beliefs becoming more accurate. A within-person association would be
+informative; its direction remains unresolved because affect can also shape
+placements and common events can change both.
 
 [Holliday, Lelkes, and Westwood (2025)](https://doi.org/10.1073/pnas.2508827122)
 find that average reductions from depolarization interventions are modest and
@@ -87,7 +89,7 @@ short-lived, with no clear durable advantage from stacking or repeating them.
 Immediate responses and persistence need separate estimands. Their evidence
 about reducing animosity does not establish that negative ads cannot increase it.
 
-For this repository, an explanatory analysis is justified only after specifying:
+For this repository, a causal explanatory analysis requires specifying:
 
 1. **Treatment and estimand:** the effect of a particular balanced message bundle,
    a framing manipulation, information, or a plausibly exogenous exposure change.
@@ -146,14 +148,24 @@ requirements are in [research-design.md](research-design.md).
   2026 publication date.
 - **Sood and Iyengar (2018), [All in the Eye of the Beholder: Partisan Affect and
   Ideological Accountability](https://gsood.com/research/papers/inNout.pdf).**
-  The authors' existing experiment assigns hypothetical candidate positions
-  within partisan-consistent ranges. It tests responses to supplied positions,
-  rather than correcting prior beliefs about actual candidates. Recover and
-  reproduce its [materials](https://github.com/soodoku/in-n-out) before proposing
-  another party-by-policy experiment. A real-candidate correction study with
-  baseline beliefs, supporter outcomes, and delayed measurement asks a different
-  question, but its novelty still needs an explicit comparison to existing
-  correction experiments.
+  The [companion replication](https://github.com/soodoku/in-n-out) separates
+  perceived disagreement from evaluation conditional on disagreement. In the
+  unreleased revised CCES analysis, the co-partisan approval slope is steeper for
+  perceived than actual distance; opposing-party slopes are similar. A check
+  holding observations fixed within each group preserves that pattern. These
+  estimates condition on the common item calibration and are cross-sectional
+  associations, not estimates of perceptions causing approval.
+  The experiment assigns hypothetical candidate positions within
+  partisan-consistent ranges. Its out-party extremity contrasts are negative,
+  while its in-party contrasts show no consistent penalty. Extremity need not
+  increase distance from a particular respondent, and absolute and squared
+  distance yield different comparisons for some groups. It therefore motivates
+  separate own- and opposing-candidate associations without supplying a universal
+  spatial-response function. This tests supplied positions rather than
+  corrections of prior beliefs about actual candidates. A real-candidate
+  correction study with baseline perceptions, supporter outcomes, and delayed
+  measurement asks a different question; novelty still requires comparison
+  with existing correction experiments.
 
 ## What to build next
 
@@ -177,21 +189,15 @@ test specified information and message effects. Do not promise a decomposition
 of natural campaign change into psychological mechanisms. Continue the descriptive
 paper even if a well-powered intervention produces a precisely small effect.
 
-## Coverage and reading status
+## Source coverage
 
-Full text or substantial methods/results inspected: Fasching et al.; Druckman
-and Levendusky; Reiljan et al.; Lelkes; Holliday et al.; Campos and Federico;
-Tyler and Iyengar; Phillips and Warner; Gidron et al.; the Allcott author
-manuscript; the Sood–Iyengar chapter manuscript. Publisher abstracts or selected
-publisher sections reviewed: Singh and Thornton; Bolsen and Thornton; Eck and
-Michel; the 2026 Druckman et al. review; Dias and Lelkes. Bakker and Lelkes's
-measurement argument was checked against the published abstract. Restricted
-full texts should be read before borrowing detailed estimators or making claims
-beyond those reviewed sections.
+The discussion of Singh and Thornton, Bolsen and Thornton, Eck and Michel,
+the 2026 Druckman et al. review, Dias and Lelkes, and Bakker and Lelkes relies
+on abstracts or selected publisher sections. Detailed use of their estimators
+requires consulting the full texts. Other discussions draw on full texts or
+substantial methods and results sections. The revised Sood–Iyengar estimates
+refer to an unreleased companion replication and may differ from the linked
+published chapter.
 
-Searches combined campaign/election timing, candidate versus party/supporter
-affect, advertising randomization, policy learning, measurement, and the named
-authors, including 2025–2026 publications. The official ANES and Polarization
-Research Lab instruments were checked alongside papers. This review identifies
-important overlap and feasible comparisons; it does not certify that no other
-paper has estimated the proposed extension.
+This focused review covers campaign timing, evaluation targets, advertising,
+policy perceptions, and measurement. It is not an exhaustive novelty search.

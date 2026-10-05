@@ -15,7 +15,7 @@ identification are separate requirements. The extension protocol is in
 | [ANES 2020–2022 Social Media Study](https://electionstudies.org/data-center/2020-2022-social-media-study/) | Three-wave online probability panel; repeated party thermometers, candidate traits, and policy perceptions. | The 2020 post-election questionnaire omits direct candidate thermometers. Linked Facebook records require separate restricted access. | Codebook and post questionnaire inspected; public survey microdata not yet acquired. |
 | [Polarization Research Lab / America's Political Pulse](https://americaspoliticalpulse.com/data) | Frequent contemporary group-affect and democratic-attitude measurements; public survey archive and codebook. | Group wording is not an explicit ordinary-supporter measure; do not assume recurring candidate outcomes. Reinterviews and weights need design checks. | Public archive acquisition and date/schema verification described below. |
 | [ANES Data Center](https://electionstudies.org/data-center/) — 2012, 2016, 2020 releases and cumulative file | Intermediate elections for comparison with 2024. | Harmonized names are not proof of equal mode, wording, universe, or date coverage. | Retrieve individual-study codebooks and item mappings before pooling. These years are coverage targets, not completed analyses. |
-| [Sood–Iyengar ideological-accountability materials](https://github.com/soodoku/in-n-out) | Existing experimental policy-position variation. | Hypothetical positions in partisan-consistent ranges; not natural learning or real-candidate corrections. | Paper design reviewed; assignment and raw materials need reproduction before reuse. |
+| [Sood–Iyengar ideological-accountability materials](https://github.com/soodoku/in-n-out) | Existing experimental policy-position variation. | Hypothetical positions in partisan-consistent ranges; not natural learning or real-candidate corrections. | Local revised replication inspected; six CCES slopes and eight experimental contrasts reproduced. Original assignment records remain to be checked before causal reuse. |
 
 ## Verified item anchors
 
@@ -80,10 +80,8 @@ is a record of messages issued; it does not establish respondent exposure.
 ## Acquisition and analysis sequence
 
 1. Freeze each official release and errata, preserve a checksum, and map only
-   verified questions. Keep respondent-level files ignored. Automated direct
-   retrieval from ANES returned HTTP 403 in this session; the public codebooks
-   were readable through the web tool. A normal official download or an
-   authenticated institutional mirror is still needed for those microdata.
+   verified questions. Additional microdata must be obtained from the official
+   providers and kept outside the release until redistribution is authorized.
 2. Inspect IDs, dates, universes, design variables, and item availability before
    looking at new contrasts. Report which comparisons fail coverage. Do not fill
    unavailable candidate outcomes with traits, approval, or perceived others'

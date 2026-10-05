@@ -6,7 +6,7 @@ see the [recent literature and contribution assessment](literature.md). The pane
 fixes their baseline identity, and observes the two objects moving differently.
 The NAES repeated cross sections then show how candidate ratings evolve across
 three elections, with explicit sensitivity to the autumn window, respondent
-composition, weighting, and item availability. The Part 1 manuscript and separate extension
+composition, weighting, and item availability. The manuscript and separate extension
 tables report the estimates and intervals; those values should be read from
 those outputs rather than maintained as another numerical copy here.
 
@@ -43,6 +43,15 @@ pattern; an unidentified or imprecise estimate leaves the explanation open.
 
 ## Highest-value next analyses with these sources
 
+The existing panel comparison is a substantive result: the candidate rating gap
+widens over January–October while the party rating gap narrows. The shorter
+September–October comparison also separates candidate from party change. Read
+the magnitudes and uncertainty from the generated [joint comparison](../tabs/panel_joint.tex).
+Calling party ratings "flat" obscures both the narrowing gap and the different
+movements in own- and opposing-party ratings. This comparison belongs alongside
+the candidate trajectories when the panel evidence enters the manuscript. Party
+ratings are a second outcome, not an untreated control for candidate ratings.
+
 1. **Show the distribution of individual changes.** Distinguish people whose
    own ratings rise, whose opposing ratings fall, both, or neither, retaining
    ties and the coarseness of the seven-category scale. Means can conceal
@@ -59,6 +68,92 @@ pattern; an unidentified or imprecise estimate leaves the explanation open.
    itself is not a causal discontinuity: news and sample composition change
    around the same dates, and anticipation is plausible. Specify the event,
    bandwidth, contemporaneous events, and negative-control outcomes first.
+
+### Perceived disagreement and within-person changes in affect
+
+This is a secondary descriptive exercise. Its value is to characterize joint
+movement in perceptions and affect; it cannot establish that perceived distance
+explains the campaign-period change. The candidate and party trajectories remain
+the primary descriptive questions.
+
+The question is whether a person who comes to see a candidate as farther from
+their own ideological position also becomes less favorable toward that candidate.
+Belief accuracy is not required for this relationship. Whether beliefs become
+more accurate is a separate question requiring an external benchmark.
+
+The companion [Sood–Iyengar ideological-accountability study](https://github.com/soodoku/in-n-out)
+separates two questions: what disagreement people perceive, and how their
+evaluations vary with that disagreement. Its revised CCES analysis puts actual,
+self, and perceived positions on a common item calibration. Among co-partisan
+senators, approval is more strongly associated with perceived than actual
+distance; the opposing-party slopes are similar. This pattern also holds when
+each group's actual- and perceived-distance regressions use the same observations.
+It motivates studying perceptions directly, but does not identify their effect
+on approval or establish the same relationship during a presidential campaign.
+
+That study's supplied-position experiment asks a different question. More extreme
+out-party positions receive lower approval in each issue-by-party comparison,
+while there is no consistent approval penalty for more extreme co-partisans.
+Extremity is not necessarily distance from the respondent: the average absolute
+distance comparison favors the extreme candidate in two of the four in-party
+issue-by-party groups. Neither a common distance-response function nor a
+general conclusion that policy disagreement is irrelevant follows. The current
+panel could estimate its own perceived-distance associations separately for
+own- and opposing-candidate affect and test their difference directly.
+
+The archived panel contains candidate-placement batteries in nominal June,
+September, and October: Obama uses `w6h5`–`w6h8`, `w9m5`–`w9m8`, and
+`w10mb5`–`w10mb8`; McCain uses the corresponding items 9–12. Self-placement is
+available in June (`w6g1`–`w6g4`) and October (`w10m1`–`w10m4`). These mappings
+agree with the [official variable list](https://electionstudies.org/wp-content/uploads/2009/03/anes_specialstudy_2008_2009panel_variable_list.txt)
+and [questionnaire](https://electionstudies.org/wp-content/uploads/2009/03/anes_specialstudy_2008_2009panel_qnaire.pdf).
+The shared item names and raw labels have been inspected; the regressions below
+have not been estimated. This is an exploratory plan after seeing the existing
+affect results, not a blinded preregistration.
+
+Start with June–October first differences for own- and opposing-candidate
+affect, on a common sample with both candidates' affect and distance observed
+at both endpoints. Use baseline party identification to hold candidate
+orientation fixed. For each person, regress the change in candidate affect on
+the change in absolute self–candidate distance, allowing a different average
+change for baseline Democrats and Republicans. This removes stable person-level
+differences and common party-specific changes; each distance coefficient describes
+whether individual departures from those changes move together. Report it in
+affect points per one-category increase in perceived distance, with intervals.
+Use the original-cohort October longitudinal weight and sampling strata, construct
+the positive-weight design before complete-case restrictions, and require ordered
+interview dates with the October interview before Election Day. Show unweighted
+estimates, outcome-specific available samples, and exclusion of leaners as
+sensitivities. Estimate the two slopes jointly, retaining within-respondent
+covariance, and report their difference rather than comparing significance
+labels. Treat the two slopes and their difference as one family of three
+comparisons. Do not impose a stronger opposing-candidate slope: the companion
+study's asymmetry for actual distance does not describe its perceived-distance
+slopes.
+
+Before fitting, reconstruct both placements from their branching questions;
+do not code unanswered branches or unknown positions as the midpoint. Check the
+self-placement reconstruction against the derived variable, verify category
+ordering, and document the equally spaced scoring assumption. Show transitions,
+missingness, retained versus lost respondents, and the number whose perceived
+distance changes. Alongside contemporaneous self-placement, recompute distance
+holding June self-placement fixed. The latter isolates movement in candidate
+placement relative to an unchanged personal reference. It also permits a
+three-wave June–September–October trajectory without inventing a September
+self-placement. A closer/unchanged/farther comparison probes reliance on equal
+category spacing. Compare candidate and party affect changes on the same
+respondents when assessing whether these associations differ by target.
+
+This estimates within-person covariation, not the causal effect of perceptions
+or a share of campaign polarization mediated by ideology. Affect-driven
+projection, common news, changing identity, and measurement error remain rival
+explanations. As a secondary temporal check, ask whether June–September movement
+in candidate placement relative to June self-placement predicts
+September–October affect change, and examine the reverse ordering. Use actual
+interview dates, report the intervals between them, and do not treat lagging as
+identification. A precise association would locate an individual-level pattern
+that aggregate means miss; a small or imprecise estimate would constrain only
+this measured association in this panel and period.
 
 ## The 2012 advertising study
 
@@ -100,7 +195,7 @@ bundle effect combines tone, content, production, and candidate targeting.
 
 ## Extension through the present: question and contribution
 
-Design updated October 4, 2026, after seeing the historical results and the
+Design updated October 5, 2026, after seeing the historical results and the
 published literature. This is a prospective plan for additional work, not a
 blinded preregistration of the existing analysis. New source metadata, some codebook marginal frequencies, and PRL item
 availability have been inspected; new outcome contrasts have not been estimated. Record further exposure and deviations when implementing.

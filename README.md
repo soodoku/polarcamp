@@ -6,7 +6,7 @@ Gaurav Sood and Shanto Iyengar
 
 An unpublished manuscript and reproducible research repository examining
 candidate evaluations in the 2000, 2004, and 2008 NAES rolling cross sections.
-Part 1 reconstructs the original manuscript's descriptive questions, separates
+The analysis reconstructs the original manuscript's descriptive questions, separates
 own- and opposing-candidate evaluations, and compares time periods and states.
 The advertising section remains pending recovery of the original airing data
 and geographic crosswalk; the current PDF is a working draft.
@@ -46,14 +46,14 @@ the locked R environment through Posit’s Linux binary mirror, installs the
 required TeX packages, and runs the full
 check with locally mounted inputs. A named Docker volume caches R packages
 between runs.
-On ARM hosts it requires Docker's AMD64 emulation. Public GitHub Actions run
+On ARM hosts it requires Docker's AMD64 emulation. GitHub Actions run
 linting and data-independent tests.
 
 `make extensions` separately rebuilds the ANES panel and 2012 experiment
 analyses using the three additional inputs included in `data/raw/` and listed
 in `extensions/sources.csv`. Their
 outputs and research recommendations are retained in `extensions/`; they do
-not enter the Part 1 manuscript or its default build.
+not enter the manuscript or its default build.
 
 `make candidate-pool` rebuilds the [2008 candidate-field figure](figs/candidate_pool_2008.pdf)
 and observed-rating coverage tables, also included in the main build. It checks the broader primary field without
@@ -75,8 +75,8 @@ only recompiles existing exhibits. `make clean` removes LaTeX build products.
 | `tabs/` | Generated aggregate CSVs and LaTeX tables |
 | `figs/` | Generated publication figures |
 | `ms/` | Manuscript, bibliography, generated numerical macros, and PDF |
-| `docs/` | Part 1 methods and input checksums |
-| `extensions/` | Separate panel/experiment outputs and Part 2 research advice |
+| `docs/` | Manuscript methods and input checksums |
+| `extensions/` | Additional panel/experiment analyses and research opportunities |
 
 Primary autumn contrasts are in `tabs/naes_changes.csv`; battleground slope
 differences are in `tabs/naes_battleground.csv`. Weekly trajectories, components,

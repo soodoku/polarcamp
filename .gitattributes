@@ -1,1 +1,3 @@
 data/raw/* -text
+AGENTS.md export-ignore
+.github export-ignore

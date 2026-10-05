@@ -6,7 +6,7 @@ research archive and verified against the source manifests. Other inputs and
 generated respondent-level files remain ignored by Git and excluded from release
 archives. The manuscript is an unpublished working paper.
 
-The Part 1 files and SHA-256 hashes are recorded in
+The manuscript inputs and SHA-256 hashes are recorded in
 [`docs/sources.csv`](../docs/sources.csv). Additional panel and experiment inputs
 are recorded in [`extensions/sources.csv`](../extensions/sources.csv). All six
 files are included in `data/raw/`:
@@ -45,7 +45,7 @@ are documented in [`docs/methods.md`](../docs/methods.md).
 
 The public PRL archive `raw/prl_all_data_20261004.zip` is a separate, ignored
 input acquired for the contemporary extension. It is not required by the
-Part 1 build and has not been used to generate manuscript results.
+manuscript build and has not been used to generate manuscript results.
 Its source, checksum, date coverage, and remaining design checks are recorded in
 [the extension inventory](../extensions/docs/data-extension.md). Newer ANES inputs remain
 to be acquired from the official releases.

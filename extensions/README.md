@@ -1,4 +1,4 @@
-# Part 2: analyses and research opportunities
+# Additional analyses and research opportunities
 
 These materials are separate from the reconstructed original manuscript.
 Run `make extensions` from the repository root to rebuild the ANES panel and

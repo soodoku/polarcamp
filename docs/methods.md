@@ -1,16 +1,18 @@
 # Analysis definitions
 
-The manuscript is an unpublished study prepared for its first public version.
+The manuscript is an unpublished working paper.
 The estimands are descriptive changes in evaluations among observed partisan
 respondents. Calendar time is not a randomized campaign treatment.
 
 | Question | Sample and quantity | Implementation | Output |
 |---|---|---|---|
-| Do candidate gaps grow during the autumn? | Self-identified NAES partisans; final 14 pre-election days minus September 1–14; unweighted | `R/naes.R`, `period_contrast()` | `tabs/naes_changes.csv`, Table~1 |
-| Which candidate's ratings change? | Paired own/opposing outcomes on the identical sample | `orient_candidates()`, `paired_traits()` | `tabs/decomposition.tex`, Table~2 |
+| How do candidate evaluations evolve over the election year? | Weekly means among self-identified partisans; fixed eventual nominees | `survey_results()` | `tabs/naes_weekly.csv`, `figs/naes_gaps.pdf`, `figs/naes_fav.pdf`, `figs/naes_trait.pdf` |
+| Do candidate gaps grow during the autumn? | Self-identified NAES partisans; final 14 pre-election days minus September 1–14; unweighted | `R/naes.R`, `period_contrast()` | `tabs/naes_changes.csv`, `tabs/naes_main.tex` |
+| Which candidate's ratings change? | Paired own/opposing outcomes on the identical sample | `orient_candidates()`, `paired_traits()` | `tabs/decomposition.tex` |
+| Do trends differ in battleground states? | Election-year linear slope difference per 100 days; historical state lists | `survey_results()` | `tabs/naes_battleground.csv`, `tabs/battleground.tex` |
 | Does observed composition explain the comparison? | Period-specific linear models standardized to complete-case autumn respondents; uncertainty conditional on that target | `period_contrast(adjusted = TRUE)` | `tabs/naes_changes.csv` |
 | Are results sensitive to scoring and selection? | Whole trait batteries, individual items, leaners, inherited weights, matched samples | `survey_results()`, `scripts/run_all.R` | `tabs/naes_sensitivity.csv` |
-| Does perceived ideology reveal learning? | Available candidate placements and self–candidate distances; no accuracy criterion | `ideology_response()` | `figs/naes_ideology.pdf`, `figs/naes_distance.pdf` |
+| How does perceived ideological disagreement change? | Available candidate placements and self–candidate distances; repeated cross-sectional descriptions | `ideology_response()` | `figs/naes_ideology.pdf`, `figs/naes_distance.pdf` |
 
 ## NAES construction
 
