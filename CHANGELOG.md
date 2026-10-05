@@ -1,5 +1,17 @@
 # Releases
 
+## 0.1.1 — 2026-10-04
+
+Includes the six source datasets used by the manuscript and existing extensions:
+the 2000, 2004, and 2008 NAES workspaces, the ANES panel workspace, and both
+2012 advertising experiment exports. These files are distributed with the
+author's authorization and match the existing source manifests. A checkout or
+release ZIP now contains the inputs needed for `make check` and `make extensions`.
+
+The manuscript, analysis code, and results are unchanged from 0.1.0. The
+research limitations described below still apply. Other inputs, generated
+respondent-level files, and local environments remain excluded.
+
 ## 0.1.0 — 2026-10-04
 
 Initial working-paper snapshot of *Coming to Dislike Your Opponents:

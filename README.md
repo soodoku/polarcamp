@@ -31,8 +31,8 @@ make check
 
 `make check` rebuilds the analysis, figures, generated tables and prose numbers,
 compiles `ms/main.pdf`, and runs linting and functional tests. It requires the
-three authorized NAES source files documented in `data/README.md`. Source checksums
-are checked before analysis. Missing inputs stop the build.
+three NAES source files included in `data/raw/` and documented in `data/README.md`.
+Source checksums are checked before analysis. Missing inputs stop the build.
 
 ```sh
 make test       # Synthetic fixtures; no source microdata needed
@@ -47,10 +47,11 @@ required TeX packages, and runs the full
 check with locally mounted inputs. A named Docker volume caches R packages
 between runs.
 On ARM hosts it requires Docker's AMD64 emulation. Public GitHub Actions run
-linting and data-independent tests; confidential inputs are not uploaded to CI.
+linting and data-independent tests.
 
 `make extensions` separately rebuilds the ANES panel and 2012 experiment
-analyses using the three additional inputs in `extensions/sources.csv`. Their
+analyses using the three additional inputs included in `data/raw/` and listed
+in `extensions/sources.csv`. Their
 outputs and research recommendations are retained in `extensions/`; they do
 not enter the Part 1 manuscript or its default build.
 
@@ -69,7 +70,7 @@ only recompiles existing exhibits. `make clean` removes LaTeX build products.
 | `R/` | Validated coding, estimators, and exhibit helpers |
 | `scripts/` | Analysis, figure, and table entry points |
 | `tests/testthat/` | Synthetic coding, matching, estimation, and output tests |
-| `data/raw/` | Ignored, immutable local inputs |
+| `data/raw/` | Six included source datasets; other inputs remain ignored |
 | `data/derived/` | Ignored, generated respondent-level data and session information |
 | `tabs/` | Generated aggregate CSVs and LaTeX tables |
 | `figs/` | Generated publication figures |
@@ -83,8 +84,9 @@ uncertainty, and sensitivity analyses should be interpreted together. None of
 these comparisons identifies the effect of campaign exposure.
 
 Historical materials remain outside this repository. Release archives include
-code, documentation, aggregate outputs, and the manuscript PDF. Respondent-level
-inputs, derived microdata, and local build environments are excluded.
+code, documentation, aggregate outputs, the manuscript PDF, and the six source
+datasets listed in the source manifests. Other inputs, derived microdata, and
+local build environments are excluded.
 The manuscript remains an unpublished working paper. The authors retain all
 rights under `LICENSE`; data access and provider restrictions are documented
 in `data/README.md`.

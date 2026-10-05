@@ -8,6 +8,12 @@ renv/staging/
 renv/cache/
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/naes00.rdata
+!data/raw/naes04.rdata
+!data/raw/naes08.rdata
+!data/raw/nes08panel.Rdata
+!data/raw/CCAP_STAN_OUTPUT.CSV
+!data/raw/CCAP_STAN_all_rand2.sav
 data/derived/*
 !data/derived/.gitkeep
 ms/*.aux

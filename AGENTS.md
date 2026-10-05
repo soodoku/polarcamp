@@ -9,7 +9,10 @@
 - Use `../hidden` as the reference for R/LaTeX reproducibility and presentation.
 - Rebuild source outcomes and generate all empirical numbers, tables, and macros.
 - Test locally with `make check`; `make ci-docker` uses a standard Rocker image.
-- Keep respondent-level data in ignored `data/raw/` and `data/derived/` paths.
+- Track the six source files listed in `docs/sources.csv` and
+  `extensions/sources.csv` under `data/raw/`; the author has authorized their
+  inclusion in the release. Keep other inputs and generated `data/derived/`
+  files ignored.
 - The original archive can be reacquired if needed; keep it outside this repo. Do not bring audit
   reports, superseded code, correspondence, or obsolete results into this repo.
 - Analysis definitions and extension opportunities are in `docs/methods.md` and

@@ -1,14 +1,15 @@
 # Data access and provenance
 
-Respondent-level inputs are local and ignored by Git. Do not infer permission
-to redistribute them from their inclusion in the working archive. The public
-repository can contain code, documentation, checksums, and aggregate outputs.
-The manuscript is an unpublished working paper. Release archives exclude all
-respondent-level inputs and derived microdata.
+The repository and release archives include the six source files listed below,
+with the author's authorization. Their bytes are preserved from the original
+research archive and verified against the source manifests. Other inputs and
+generated respondent-level files remain ignored by Git and excluded from release
+archives. The manuscript is an unpublished working paper.
 
 The Part 1 files and SHA-256 hashes are recorded in
 [`docs/sources.csv`](../docs/sources.csv). Additional panel and experiment inputs
-are recorded in [`extensions/sources.csv`](../extensions/sources.csv). Place authorized copies in `data/raw/`:
+are recorded in [`extensions/sources.csv`](../extensions/sources.csv). All six
+files are included in `data/raw/`:
 
 - `naes00.rdata`, `naes04.rdata`, `naes08.rdata`: archived NAES research workspaces;
 - `nes08panel.Rdata`: archived ANES panel workspace, version 20100903;
@@ -27,15 +28,15 @@ and [ANES study page](https://electionstudies.org/data-center/2008-2009-panel-st
 are the providers' starting points for access and documentation. New downloads
 are not automatically byte-identical to these archived workspaces. Reconstructing
 from a different release requires an explicit mapping and a new source manifest;
-do not bypass a failed checksum to make the pipeline run. The advertising exports
-and archived workspaces may require access from the authors.
+do not bypass a failed checksum to make the pipeline run.
 
 `make analysis` verifies the three NAES sources before estimating or overwriting outputs.
 Missing or changed files stop the build. Nothing silently substitutes synthetic
 data for research results. `data/derived/` contains generated respondent-level
 files and session information and is also ignored. `make test` uses synthetic
-fixtures and works without confidential inputs; `make check` requires the
-three authorized NAES inputs and compiles the paper from fresh analysis outputs.
+fixtures and works without source datasets; `make check` uses the three included
+NAES inputs and compiles the paper from fresh analysis outputs. `make extensions`
+uses the three included panel and experiment inputs.
 
 Variable definitions, missingness rules, weights, and inferential assumptions
 are documented in [`docs/methods.md`](../docs/methods.md).
