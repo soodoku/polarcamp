@@ -1,0 +1,29 @@
+Package: polarcamp
+Type: Project
+Title: Candidate Evaluations during Presidential Campaigns
+Version: 0.1.0
+Authors@R: c(
+    person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com"),
+    person("Shanto", "Iyengar", role = "aut"))
+Description: Reproducible analyses and manuscript for an unpublished study of
+    candidate evaluations in the NAES rolling cross sections. Includes
+    descriptive sensitivity analyses, candidate-field comparisons, and
+    separate ANES panel and advertising experiment extensions.
+License: file LICENSE
+Encoding: UTF-8
+Imports:
+    digest,
+    dplyr,
+    ggplot2,
+    haven,
+    sandwich,
+    scales,
+    survey,
+    tidyr
+Suggests:
+    lintr,
+    renv,
+    styler,
+    testthat,
+    withr
+Config/testthat/edition: 3
